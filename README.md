@@ -1,5 +1,8 @@
 # EcoJusticeAI
-We ,as a team of 3 members ,have observed that we need an AI agent which will ensure strict regulation on litter detection which will promote environment cleanliness.
+We, as a team of three members, have observed the growing need for an **AI-based system** that ensures **strict regulation on litter detection** to promote **environmental cleanliness** within university campuses and public areas.  
+
+Our project, **EcoJusticeAI**, uses **Computer Vision** and **AI technologies** to automatically detect littering incidents, identify offenders, and help enforce cleanliness policies.
+
 ## 🧩 Approach and Challenges
 
 Initially, we used **Roboflow** to train a YOLO-based custom model for detecting multiple classes such as **person**, **litter**, and **face**.  
