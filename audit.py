@@ -1,8 +1,15 @@
 import json
-import re
+import os
+import sys
 
-# Change line 4 to this:
-with open(r'C:\Users\0024-BSCS-22\Downloads\FYPPP (1).ipynb', 'r', encoding='utf-8') as f:
+# Prefer a local notebook; override with: python audit.py path/to/notebook.ipynb
+notebook_path = sys.argv[1] if len(sys.argv) > 1 else "FYP_PRODUCTION.ipynb"
+
+if not os.path.exists(notebook_path):
+    print(f"❌ Notebook not found: {notebook_path}")
+    sys.exit(1)
+
+with open(notebook_path, "r", encoding="utf-8") as f:
     nb = json.load(f)
 
 print(f"Total cells: {len(nb['cells'])}")
